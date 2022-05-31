@@ -1,0 +1,12 @@
+# Ex1:
+## 1 - Data cleansing
+Primeiramente comecei por dividir o json dos mapas em 2 ficheiros, um que contem as cidades e o outro que contém todas as ligações.
+Para ser mais facil importar para o mongodb, em vez de ter 1 objeto com uma lista, meti os ficheiros json como uma lista.
+
+## 2 - MongoDB
+Com os dois ficheiros json ja em formato jsonArray, criei duas collections, cidades e ligacoes, com os seguintes comandos 
+  - mongoimport -d MAPA2022 -c cidades --file cidades.json --jsonArray
+  - mongoimport -d MAPA2022 -c ligacoes --file ligacoes.json --jsonArray
+
+## 3 - Servidor Node
+
